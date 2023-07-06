@@ -68,7 +68,7 @@ During the Developer Mining Phase, we introduce specific scenarios that allow de
 
 The "Developer Mining Phase" not only reduces energy consumption in PoW systems but also provides a platform to appreciate the exceptional work done by developers, founders, and contributors. By incentivizing their efforts and introducing energy-efficient mining strategies, we create a sustainable and rewarding environment for all participants.
 
-### Developer Mining Phase:
+## Developer Mining Phase:
 
 The condition for the developer mining phase is based on the `developerMining` variable, which is initially set to `false`. In the code, there are several scenarios mentioned that can trigger the developer mining phase. These scenarios are as follows:
 
@@ -76,7 +76,7 @@ a. Scenario 1: Developer mining a percentage of total assets with reduced diffic
 
 b. Scenario 2: Probability-based developer mining over a certain period - If the random number generated (`dis(gen) < miningProbability`) satisfies the probability condition, the `developerMining` variable is set to `true`, and the difficulty is adjusted accordingly.
 
-Actions during Developer Mining Phase:
+## Actions during Developer Mining Phase:
 
 While in the developer mining phase, the mining process continues within the `performMining()` function. The mining process involves performing mathematical operations on a variable `k`, adjusting the difficulty, and checking if the target hash is met.
 
@@ -95,7 +95,6 @@ a. If the target hash is met (`if (meetsDifficultyTarget(std::to_string(k), targ
 b. If a timeout duration is reached (`if (currentTime - startTime >= timeoutDuration)`), the mining process is terminated, and a timeout message is displayed.
 
 In summary, the "developers mining phase" condition is based on the `developerMining` variable, which is triggered by certain scenarios and probability-based conditions. During the developer mining phase, the mining process continues with adjusted difficulty. Once the mining goals or conditions are met, the code can automatically switch to the normal mining phase or terminate the mining process based on the timeout duration.
-
 
 
 ## Contributing
