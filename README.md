@@ -60,7 +60,8 @@ The SPHINXPoW algorithm includes several mathematical operations for nonce calcu
 The `isValidHash` function is used to check if a given hash has the required number of leading zeros. It iterates through the hash characters and checks if the number of leading zeros matches the required number. It returns `true` if the hash is valid, indicating that it meets the required leading zeros.
 
 
-### The scenario
+
+## The Scenario
 
 To minimizing energy consumption associated with Proof-of-Work (PoW) systems, we have implemented a unique approach called the "Developer Mining Phase." This phase aims to significantly reduce energy usage while providing a rewarding opportunity for developers, founders, and contributors.
 
@@ -68,7 +69,8 @@ During the Developer Mining Phase, we introduce specific scenarios that allow de
 
 The "Developer Mining Phase" not only reduces energy consumption in PoW systems but also provides a platform to appreciate the exceptional work done by developers, founders, and contributors. By incentivizing their efforts and introducing energy-efficient mining strategies, we create a sustainable and rewarding environment for all participants.
 
-## Developer Mining Phase:
+
+### Developer Mining Phase:
 
 The condition for the developer mining phase is based on the `developerMining` variable, which is initially set to `false`. In the code, there are several scenarios mentioned that can trigger the developer mining phase. These scenarios are as follows:
 
@@ -76,7 +78,7 @@ a. Scenario 1: Developer mining a percentage of total assets with reduced diffic
 
 b. Scenario 2: Probability-based developer mining over a certain period - If the random number generated (`dis(gen) < miningProbability`) satisfies the probability condition, the `developerMining` variable is set to `true`, and the difficulty is adjusted accordingly.
 
-## Actions during Developer Mining Phase:
+### Actions during Developer Mining Phase:
 
 While in the developer mining phase, the mining process continues within the `performMining()` function. The mining process involves performing mathematical operations on a variable `k`, adjusting the difficulty, and checking if the target hash is met.
 
