@@ -1,7 +1,7 @@
 # SPHINXPoW
 
 ## Introduction
-This project is dedicated to the open-source post-quantum SPHINX blockchain. SPHINX is a blockchain protocol designed to provide secure and scalable solutions in the post-quantum era. The project aims to develop a robust and decentralized network using a Proof of Work (PoW) consensus algorithm initiated by the community.
+This project is dedicated to the open-source post-quantum SPHINX blockchain. SPHINX is a blockchain protocol designed to provide secure and scalable solutions in the post-quantum era. The project aims to develop a robust and decentralized network using a Proof of Work (PoW) consensus algorithm initiated by the community. We thrilled to introduce a new design for Proof-of-Work operation.
 
 ## Getting Started
 To get started with the SPHINX blockchain project, follow the instructions below:
@@ -11,13 +11,13 @@ To get started with the SPHINX blockchain project, follow the instructions below
 3. Explore the codebase to understand the project structure and components.
 4. Run the project or make modifications as needed.
 
-## Components
+## Components of SPHINXPoW
 
-### SPHINX_256 Hash Function
+#### SPHINX_256 Hash Function
 The `SPHINX_256` hash function used in the code is based on [SWIFFTX](https://en.wikipedia.org/wiki/SWIFFT)
 , which is a cryptographic hash function. It is designed to provide secure hashing capabilities in the post-quantum era. This hash function takes a message as input and produces a fixed-size output of 256 bits.
 
-### A lattice-based construction
+##### A lattice-based construction
 In cryptography, SWIFFT is a collection of provably secure hash functions based on the concept of the fast Fourier transform (FFT). It distinguishes itself by providing a mathematical proof of its security and utilizing the LLL basis reduction algorithm. SWIFFT's security is linked to the difficulty of finding short vectors in cyclic/ideal lattices, making collision finding a challenging task. This property offers a stronger security guarantee compared to most other cryptographic hash functions.
 
 Despite its provable security and desirable cryptographic and statistical properties, SWIFFT is not designed as a general-purpose hash function. It does not function as a pseudorandom function and is not suitable for applications requiring a random oracle. While SWIFFT achieves a reasonable throughput of 40Mbit/s on a 3.2 GHz Intel Pentium 4, it is less efficient than traditional hash functions that lack provable collision-resistance. As a result, SWIFFT finds practical use in scenarios where the proof of collision-resistance holds significant value, such as long-term trustworthy digital signatures.
