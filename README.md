@@ -1,23 +1,25 @@
 # SPHINXPoW
 
-## Introduction
+# Introduction
 This project is dedicated to the open-source post-quantum SPHINX blockchain. SPHINX is a blockchain protocol designed to provide secure and scalable solutions in the post-quantum era. The project aims to develop a robust and decentralized network using a Proof of Work (PoW) consensus algorithm initiated by the community. We thrilled to introduce a new design for Proof-of-Work operation.
 
-## Getting Started
+
+# Getting Started
 To get started with the SPHINX blockchain project, follow the instructions below:
 
 1. Clone the repository: `git clone https://github.com/ChyKusuma/SPHINXPoW.git`
 2. Install the necessary dependencies (List the dependencies or provide a link to the installation guide).
 3. Explore the codebase to understand the project structure and components.
 4. Run the project or make modifications as needed.
+   
 
-## Components of SPHINXPoW
+# Components of SPHINXPoW
 
-#### SPHINX_256 Hash Function
+### SPHINX_256 Hash Function
 The `SPHINX_256` hash function used in the code is based on [SWIFFTX](https://en.wikipedia.org/wiki/SWIFFT)
 , which is a cryptographic hash function. It is designed to provide secure hashing capabilities in the post-quantum era. This hash function takes a message as input and produces a fixed-size output of 256 bits.
 
-##### A lattice-based construction
+### A lattice-based construction
 In cryptography, SWIFFT is a collection of provably secure hash functions based on the concept of the fast Fourier transform (FFT). It distinguishes itself by providing a mathematical proof of its security and utilizing the LLL basis reduction algorithm. SWIFFT's security is linked to the difficulty of finding short vectors in cyclic/ideal lattices, making collision finding a challenging task. This property offers a stronger security guarantee compared to most other cryptographic hash functions.
 
 Despite its provable security and desirable cryptographic and statistical properties, SWIFFT is not designed as a general-purpose hash function. It does not function as a pseudorandom function and is not suitable for applications requiring a random oracle. While SWIFFT achieves a reasonable throughput of 40Mbit/s on a 3.2 GHz Intel Pentium 4, it is less efficient than traditional hash functions that lack provable collision-resistance. As a result, SWIFFT finds practical use in scenarios where the proof of collision-resistance holds significant value, such as long-term trustworthy digital signatures.
@@ -56,6 +58,43 @@ The SPHINXPoW algorithm includes several mathematical operations for nonce calcu
 
 ### isValidHash Function
 The `isValidHash` function is used to check if a given hash has the required number of leading zeros. It iterates through the hash characters and checks if the number of leading zeros matches the required number. It returns `true` if the hash is valid, indicating that it meets the required leading zeros.
+
+
+### To minimizing energy consumption associated with Proof-of-Work (PoW) systems, we have implemented a unique approach called the "Developer Mining Phase." This phase aims to significantly reduce energy usage while providing a rewarding opportunity for developers, founders, and contributors.
+
+During the Developer Mining Phase, we introduce specific scenarios that allow developers to mine with reduced energy consumption. By allocating a portion of the total mining assets to developers, we ensure their valuable contributions are duly recognized and rewardeds.
+
+The "Developer Mining Phase" not only reduces energy consumption in PoW systems but also provides a platform to appreciate the exceptional work done by developers, founders, and contributors. By incentivizing their efforts and introducing energy-efficient mining strategies, we create a sustainable and rewarding environment for all participants.
+
+### Developer Mining Phase:
+
+The condition for the developer mining phase is based on the `developerMining` variable, which is initially set to `false`. In the code, there are several scenarios mentioned that can trigger the developer mining phase. These scenarios are as follows:
+
+a. Scenario 1: Developer mining a percentage of total assets with reduced difficulty - When `developerMining` is `true`, the mining assets for developers are calculated, and the difficulty is adjusted accordingly.
+
+b. Scenario 2: Probability-based developer mining over a certain period - If the random number generated (`dis(gen) < miningProbability`) satisfies the probability condition, the `developerMining` variable is set to `true`, and the difficulty is adjusted accordingly.
+
+Actions during Developer Mining Phase:
+
+While in the developer mining phase, the mining process continues within the `performMining()` function. The mining process involves performing mathematical operations on a variable `k`, adjusting the difficulty, and checking if the target hash is met.
+
+If a successful mining result is obtained, the code performs the following actions:
+
+a. Scenario 3: Automatically switching to the normal mining phase once developer mining is done - If `developerMining` is `true` and the `developerMiningAssets` is depleted (`developerMiningAssets <= 0`), the `developerMining` variable is set to `false`, and the difficulty is adjusted accordingly.
+
+b. Outputting the successful mining result - The successful mining result is displayed on the console.
+
+Conditions for Exiting the Mining Process:
+
+The mining process continues in a loop until certain conditions are met:
+
+a. If the target hash is met (`if (meetsDifficultyTarget(std::to_string(k), target))`), the loop is exited, and the successful mining result is outputted.
+
+b. If a timeout duration is reached (`if (currentTime - startTime >= timeoutDuration)`), the mining process is terminated, and a timeout message is displayed.
+
+In summary, the "developers mining phase" condition is based on the `developerMining` variable, which is triggered by certain scenarios and probability-based conditions. During the developer mining phase, the mining process continues with adjusted difficulty. Once the mining goals or conditions are met, the code can automatically switch to the normal mining phase or terminate the mining process based on the timeout duration.
+
+
 
 ## Contributing
 We welcome contributions from the developer community to enhance the SPHINX blockchain project. If you are interested in contributing, please follow the guidelines below:
