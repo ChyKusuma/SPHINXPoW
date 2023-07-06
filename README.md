@@ -4,15 +4,6 @@
 This project is dedicated to the world community as an Open-source Post-quantum SPHINX blockchain, means anyone can join and contribute based on his/ her passion and skills. SPHINX is a blockchain protocol designed to provide secure and scalable solutions in the post-quantum era. The project aims to develop a robust and decentralized network using a Proof of Work (PoW) consensus algorithm initiated by the community. We thrilled to introduce a new design for Proof-of-Work operation.
 
 
-# Getting Started
-To get started with the SPHINX blockchain project, follow the instructions below:
-
-1. Clone the repository: `git clone https://github.com/ChyKusuma/SPHINXPoW.git`
-2. Install the necessary dependencies (List the dependencies or provide a link to the installation guide).
-3. Explore the codebase to understand the project structure and components.
-4. Run the project or make modifications as needed.
-5. Insert your information (i.e name, email) in the authors space.
-
 # Components of SPHINXPoW
 
 ### SPHINX_256 Hash Function
@@ -99,6 +90,16 @@ b. If a timeout duration is reached (`if (currentTime - startTime >= timeoutDura
 In summary, the "developers mining phase" condition is based on the `developerMining` variable, which is triggered by certain scenarios and probability-based conditions. During the developer mining phase, the mining process continues with adjusted difficulty. Once the mining goals or conditions are met, the code can automatically switch to the normal mining phase or terminate the mining process based on the timeout duration.
 
 
+
+# Getting Started
+To get started with the SPHINX blockchain project, follow the instructions below:
+
+1. Clone the repository: `git clone https://github.com/ChyKusuma/SPHINXPoW.git`
+2. Install the necessary dependencies (List the dependencies or provide a link to the installation guide).
+3. Explore the codebase to understand the project structure and components.
+4. Run the project or make modifications as needed.
+
+
 ## Contributing
 We welcome contributions from the developer community to enhance the SPHINX blockchain project. If you are interested in contributing, please follow the guidelines below:
 
@@ -109,6 +110,7 @@ We welcome contributions from the developer community to enhance the SPHINX bloc
 5. Commit your changes: `git commit -m "Description of your changes"`.
 6. Push the branch to your forked repository: `git push origin your-branch-name`.
 7. Open a pull request against the main repository, describing your changes and the problem it solves.
+8. Insert your information (i.e name, email) in the authors space.
 
 ## License
 Specify the license under which the project is distributed (MIT License).
