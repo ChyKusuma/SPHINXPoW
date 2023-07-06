@@ -44,6 +44,7 @@
 #include <cmath>
 #include <iostream>
 #include <vector>
+#include <string>
 #include <chrono>
 #include <random>
 #include <cstdint>
