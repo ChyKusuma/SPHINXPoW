@@ -1,4 +1,4 @@
-# SPHINX Blockchain Project
+# SPHINX
 
 ## Introduction
 This project is dedicated to the open-source post-quantum SPHINX blockchain. SPHINX is a blockchain protocol designed to provide secure and scalable solutions in the post-quantum era. The project aims to develop a robust and decentralized network using a Proof of Work (PoW) consensus algorithm.
