@@ -60,7 +60,9 @@ The SPHINXPoW algorithm includes several mathematical operations for nonce calcu
 The `isValidHash` function is used to check if a given hash has the required number of leading zeros. It iterates through the hash characters and checks if the number of leading zeros matches the required number. It returns `true` if the hash is valid, indicating that it meets the required leading zeros.
 
 
-### To minimizing energy consumption associated with Proof-of-Work (PoW) systems, we have implemented a unique approach called the "Developer Mining Phase." This phase aims to significantly reduce energy usage while providing a rewarding opportunity for developers, founders, and contributors.
+### The scenario
+
+To minimizing energy consumption associated with Proof-of-Work (PoW) systems, we have implemented a unique approach called the "Developer Mining Phase." This phase aims to significantly reduce energy usage while providing a rewarding opportunity for developers, founders, and contributors.
 
 During the Developer Mining Phase, we introduce specific scenarios that allow developers to mine with reduced energy consumption. By allocating a portion of the total mining assets to developers, we ensure their valuable contributions are duly recognized and rewardeds.
 
