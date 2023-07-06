@@ -1,7 +1,7 @@
 # SPHINXPoW
 
 # Introduction
-This project is dedicated to the open-source post-quantum SPHINX blockchain. SPHINX is a blockchain protocol designed to provide secure and scalable solutions in the post-quantum era. The project aims to develop a robust and decentralized network using a Proof of Work (PoW) consensus algorithm initiated by the community. We thrilled to introduce a new design for Proof-of-Work operation.
+This project is dedicated to the world community as an Open-source Post-quantum SPHINX blockchain, means anyone can join and contribute based on his/ her passion and skills. SPHINX is a blockchain protocol designed to provide secure and scalable solutions in the post-quantum era. The project aims to develop a robust and decentralized network using a Proof of Work (PoW) consensus algorithm initiated by the community. We thrilled to introduce a new design for Proof-of-Work operation.
 
 
 # Getting Started
@@ -11,7 +11,7 @@ To get started with the SPHINX blockchain project, follow the instructions below
 2. Install the necessary dependencies (List the dependencies or provide a link to the installation guide).
 3. Explore the codebase to understand the project structure and components.
 4. Run the project or make modifications as needed.
-   
+5. Insert your information (i.e name, email) in the authors space.
 
 # Components of SPHINXPoW
 
