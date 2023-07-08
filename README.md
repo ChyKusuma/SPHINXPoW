@@ -89,6 +89,13 @@ b. If a timeout duration is reached (`if (currentTime - startTime >= timeoutDura
 
 In summary, the "developers mining phase" condition is based on the `developerMining` variable, which is triggered by certain scenarios and probability-based conditions. During the developer mining phase, the mining process continues with adjusted difficulty. Once the mining goals or conditions are met, the code can automatically switch to the normal mining phase or terminate the mining process based on the timeout duration.
 
+### This repository is part of the  [SPHINXPoW](https://github.com/SPHINX-HUB-ORG/SPHINXMINER)
+
+Please note that the code in this repository is a part of the SPHINXPoW algorithm, which is currently in development and not fully integrated or extensively tested for functionality. The purpose of this repository is to provide a framework and algorithm for the mining scheme in the SPHINX blockchain project.
+
+As the project progresses, further updates and enhancements will be made to ensure the code's stability and reliability. We encourage contributors to participate in improving and refining the SPHINXPoW algorithm by submitting pull requests and providing valuable insights.
+
+We appreciate your understanding and look forward to collaborative efforts in shaping the future of the SPHINX blockchain project.
 
 
 # Getting Started
