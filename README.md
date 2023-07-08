@@ -39,7 +39,7 @@ The `solveNonce` function in the `SPHINXPoW` namespace is responsible for solvin
 The `adjustDifficulty` function is used to dynamically adjust the difficulty level based on the network hash rate and other factors. It calculates the expected number of blocks per day, adjusts the target blocks per day for developer mining, and calculates the network target hash rate. It then adjusts the difficulty target by reducing or increasing the target based on the network hash rate and a predefined adjustment factor.
 
 ### Mathematical Properties
-The SPHINXPoW algorithm includes several mathematical operations for nonce calculation and difficulty adjustment. Here are some of the mathematical properties used in the code:
+The SPHINXPoW algorithm includes several mathematical operations for nonce calculation and difficulty adjustment. This will help the algorithm to preventing brute-force attacked by randomness makesure. Here are some of the mathematical properties used in the code:
 
 - `multiply` Function: This inline function is used to multiply the upper and lower digits of a number. It takes a number `k` as input, splits it into upper and lower digits, and multiplies them. If either the upper or lower digits are zero, the function returns `k` as it is.
 
