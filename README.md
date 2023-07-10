@@ -8,8 +8,7 @@ This project is dedicated to the world community as an Open-source Post-quantum 
 
 ### SPHINX_256 Hash Function
 The [SPHINXHash](https://github.com/SPHINX-HUB-ORG/SPHINXSign/blob/main/sphincs%2B-round3-specification.pdf)
- hash function used in the code is based on [SWIFFTX](https://en.wikipedia.org/wiki/SWIFFT)
-, which is a cryptographic hash function. It is designed to provide secure hashing capabilities in the post-quantum era. This hash function takes a message as input and produces a fixed-size output of 256 bits.
+ hash function used in the code is based on [SWIFFTX](https://github.com/ChyKusuma/SPHINXHash/blob/main/SWIFFTX_Report.pdf) which is a cryptographic hash function, the designed to provide secure hashing capabilities known "Lattice-based" that promising secure in the post-quantum era. This hash function takes a message as input and produces a fixed-size output of 256 bits.
 
 
 ### calculateHash Function
