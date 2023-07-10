@@ -7,23 +7,9 @@ This project is dedicated to the world community as an Open-source Post-quantum 
 # Components of SPHINXPoW
 
 ### SPHINX_256 Hash Function
-The `SPHINX_256` hash function used in the code is based on [SWIFFTX](https://en.wikipedia.org/wiki/SWIFFT)
+The [SPHINXHash](https://github.com/SPHINX-HUB-ORG/SPHINXSign/blob/main/sphincs%2B-round3-specification.pdf)
+ hash function used in the code is based on [SWIFFTX](https://en.wikipedia.org/wiki/SWIFFT)
 , which is a cryptographic hash function. It is designed to provide secure hashing capabilities in the post-quantum era. This hash function takes a message as input and produces a fixed-size output of 256 bits.
-
-### A lattice-based construction
-In cryptography, SWIFFT is a collection of provably secure hash functions based on the concept of the fast Fourier transform (FFT). It distinguishes itself by providing a mathematical proof of its security and utilizing the LLL basis reduction algorithm. SWIFFT's security is linked to the difficulty of finding short vectors in cyclic/ideal lattices, making collision finding a challenging task. This property offers a stronger security guarantee compared to most other cryptographic hash functions.
-
-Despite its provable security and desirable cryptographic and statistical properties, SWIFFT is not designed as a general-purpose hash function. It does not function as a pseudorandom function and is not suitable for applications requiring a random oracle. While SWIFFT achieves a reasonable throughput of 40Mbit/s on a 3.2 GHz Intel Pentium 4, it is less efficient than traditional hash functions that lack provable collision-resistance. As a result, SWIFFT finds practical use in scenarios where the proof of collision-resistance holds significant value, such as long-term trustworthy digital signatures.
-
-A modified version of SWIFFT called SWIFFTX was proposed as a candidate for the SHA-3 function in the NIST hash function competition. However, it was not selected in the first round of evaluations. Presently, "Lattice-Based" cryptographic algorithms are gaining attention as promising solutions to mitigate security risks posed by quantum computers.
-
-We present a problem that is as difficult as finding approximate short vectors in certain n-dimensional lattices. The hardness of this problem is comparable to finding γ(n)-approximate short vectors, where γ(n) is a function that grows logarithmically with n.
-
-The problem becomes challenging due to the specific properties of the lattices and requires preprocessing of the number field to achieve the desired connection factors. Although the decision problems related to these lattices are not known to be NP-hard and can be solved in polynomial time, the search approximation problems remain highly complex. Even with advancements in computational number theory, the algorithms for ideal lattices perform similarly to those for general lattices.
-
-To achieve the best connection factor, we instantiate our constructions using infinite families of number fields with constant root discriminant. While such families exist and can be computed, efficient constructions are still an area of research. Previous approaches were limited to a connection factor of γ(n) = O(n), but our work aims to improve upon this.
-
-Our results focus on lattices that correspond to ideals in the ring of integers of an algebraic number field. We address the problem of finding approximate shortest vectors in these lattices. Additionally, we establish reductions between different worst-case problems on ideal lattices, demonstrating relationships between the shortest vector problem and the closest vector problem. These reductions are similar to those observed for general lattices.
 
 
 ### calculateHash Function
